@@ -1,13 +1,32 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  font-family: Ubuntu;
+}
+.react-calendar {
+  width: 100% !important;
+  border-radius: 1rem !important;
+  border: none !important;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  overflow: hidden !important;
+}
+.react-calendar__navigation {
+  background: #6419e6 !important;
+  color: #fff !important;
+  font-weight: 900 !important;
+}
+.react-calendar__navigation__label:hover,
+.react-calendar__navigation__label:focus,
+.react-calendar__navigation__arrow:hover,
+.react-calendar__navigation__arrow:focus {
+  background: #ef4444 !important;
+}
+.react-calendar__viewContainer {
+  padding: 1rem 0 !important;
+}
+.react-calendar__tile--active {
+  background: #6419e6 !important;
+  border-radius: 0.5rem !important;
 }
